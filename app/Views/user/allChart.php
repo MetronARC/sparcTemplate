@@ -3,7 +3,7 @@
 
 <h1>All Machine Charts for <?= htmlspecialchars($date) ?></h1>
 <div class="recent-orders">
-    <div id="charts-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div id="charts-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start; max-width: 1000px; margin: 0 auto;">
         <!-- Charts will be dynamically inserted here -->
     </div>
 </div>
@@ -54,7 +54,7 @@
                     const machineData = responseData.data[machineName];
                     const canvas = document.createElement('canvas');
                     canvas.id = `chart-${machineName}`;
-                    canvas.style.width = '30%';
+                    canvas.style.width = '300px';
                     canvas.style.height = '100px';
                     chartsContainer.appendChild(canvas);
                     console.log(`Canvas created for ${machineName}:`, canvas);
