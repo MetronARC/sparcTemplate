@@ -18,7 +18,7 @@ $routes->get('API/updateMachineData', 'APIController::updateMachineData');
 $routes->post('recap/fetchChartData', 'Recap::fetchChartData');
 
 $routes->get('login', function () {
-    return view('auth/login');
+    return view('Auth/login');
 });
 
 $routes->setAutoRoute(true);
